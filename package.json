@@ -7,18 +7,6 @@
     "postinstall": "gulp copy",
     "test": "karma start"
   },
-  "main": "satellizer.js",
-  "homepage": "https://github.com/sahat/satellizer",
-  "bugs": "https://github.com/sahat/satellizer/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sahat/satellizer.git"
-  },
-  "author": {
-    "name": "Sahat Yalkabov",
-    "email": "sahat@me.com",
-    "url": "http://sahatyalkabov.com"
-  },
   "dependencies": {
     "async": "^1.5.2",
     "bcryptjs": "^2.3.0",
@@ -41,30 +29,5 @@
     "karma-coverage": "^1.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.0"
-  },
-  "license": "MIT",
-  "tags": [
-    "authentication",
-    "login",
-    "token",
-    "jwt",
-    "angularjs",
-    "angular",
-    "auth",
-    "facebook",
-    "google",
-    "linkedin",
-    "twitter",
-    "foursquare",
-    "github",
-    "yahoo",
-    "oauth",
-    "oauth 1.0",
-    "oauth 2.0",
-    "oauth2",
-    "oauth1",
-    "sign-in",
-    "social",
-    "twitch"
-  ]
+  }
 }
