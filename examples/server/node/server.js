@@ -68,10 +68,10 @@ mongoose.connection.on('error', function(err) {
 var app = express();
 
 // OpenShift configuration
-var HOST = process.env.OPENSHIFT_NODEJS_IP || 'localhost';
-var PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000;
+var HOST = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+var PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
-app.set('host', HOST)
+app.set('host', HOST);
 app.set('port', PORT);
 app.use(cors());
 app.use(logger('dev'));
