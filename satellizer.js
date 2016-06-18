@@ -434,7 +434,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
         Oauth.unlink = function(provider, opts) {
           opts = opts || {};
           opts.url = opts.url ? opts.url : utils.joinUrl(config.baseUrl, config.unlinkUrl);
-          opts.data = { provider: provider } || opts.data;
+          opts.data =  opts.data || { provider: provider };
           opts.method = opts.method || 'POST';
           opts.withCredentials = opts.withCredentials || config.withCredentials;
 
